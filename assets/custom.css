@@ -1,0 +1,13 @@
+/***** Header Menu *****/
+.header__menu-item span{
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    /* identical to box height */
+    color: #000000;
+}
+.header__active-menu-item{
+    font-weight: 700 !important;
+}
