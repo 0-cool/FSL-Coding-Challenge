@@ -48,8 +48,48 @@
         "show_text_below": false
       }
     },
+    "16580744775c33591c": {
+      "type": "custom-featured-items",
+      "blocks": {
+        "6b5e9b90-11a3-4f6e-bc16-bd14b9b13ee6": {
+          "type": "item",
+          "settings": {
+            "title": "High-Quality Codes",
+            "text_link": "LEARN MORE",
+            "url_link": "#",
+            "bg_image": "shopify:\/\/shop_images\/1.png"
+          }
+        },
+        "4630817b-5885-4998-8110-5b6a38172f97": {
+          "type": "item",
+          "settings": {
+            "title": "Fast Delivery Schedules",
+            "text_link": "LEARN MORE",
+            "url_link": "#",
+            "bg_image": "shopify:\/\/shop_images\/2.png"
+          }
+        },
+        "737ddf12-7c5b-4bec-9f20-9e493f704742": {
+          "type": "item",
+          "settings": {
+            "title": "Cybersecurity Oriented",
+            "text_link": "LEARN MORE",
+            "url_link": "#",
+            "bg_image": "shopify:\/\/shop_images\/3.png"
+          }
+        }
+      },
+      "block_order": [
+        "6b5e9b90-11a3-4f6e-bc16-bd14b9b13ee6",
+        "4630817b-5885-4998-8110-5b6a38172f97",
+        "737ddf12-7c5b-4bec-9f20-9e493f704742"
+      ],
+      "settings": {
+      }
+    },
     "rich_text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -80,6 +120,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -107,6 +148,7 @@
     },
     "collage": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -145,6 +187,7 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -158,6 +201,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",
@@ -208,14 +252,71 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1658074541a52429e7": {
+      "type": "top-engineers-featured",
+      "settings": {
+        "title": "Top Software Engineers",
+        "heading_size": "h1",
+        "description": "<p>You can allocate in your company our best software engineers to help you develop your applications<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "software-engineers",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1658074548ab1b6a64": {
+      "type": "top-engineers-featured",
+      "settings": {
+        "title": "Top Quality Assurance Engineers",
+        "heading_size": "h1",
+        "description": "<p>You can allocate in your company our best QA engineers to help you improve the quality of your deliveries<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "quality-assurance",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
+    "16580744775c33591c",
     "rich_text",
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "1658074541a52429e7",
+    "1658074548ab1b6a64"
   ]
 }
