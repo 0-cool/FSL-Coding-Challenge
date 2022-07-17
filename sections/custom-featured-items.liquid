@@ -1,0 +1,110 @@
+<style>
+.featured-items-container{
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 80px;
+}
+.featured-items-container ul{
+    text-align:center;
+    width: 100%;
+}
+
+.featured-items-container ul li{
+    display: inline-block;
+    background-size: contain !important;
+    width: 340px;
+    height: 340px;
+    margin-right: 38px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.featured-items-container ul li .content-item{
+    position: absolute;
+    top: 28%;
+    vertical-align: middle;
+    width: 100%;
+}
+.featured-items-container ul li .content-item .title{
+    max-width: 223px;
+    margin: 0 auto;
+}
+.featured-items-container ul li .content-item .title h3{
+    font-family: 'Domine';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    /* Feature Text Color */
+    color: #000000;
+}
+.featured-items-container ul li .content-item .text-link{
+    margin-top: 65px;
+}
+.featured-items-container ul li .content-item .text-link a{
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    /* identical to box height */
+    /* Feature Text Color */
+    color: #000000;
+    text-decoration: none; 
+}
+
+</style>
+<div class="featured-items-container">
+<ul>
+{% for item in section.blocks %}
+    <li style="background: url({{ item.settings.bg_image | img_url: 'master' }});">
+        <div class="content-item">
+            <div class="title"><h3>{{ item.settings.title }}</h3></div>
+            <div class="text-link"><a href="{{ item.settings.url_link }}">{{ item.settings.text_link }}</a></div>
+        </div>
+    </li>
+{% endfor %}
+</ul>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Featured Items",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Items",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title Item"
+        },
+        {
+          "type": "text",
+          "id": "text_link",
+          "label": "Text Link Item"
+        },
+        {
+          "type": "url",
+          "id": "url_link",
+          "label": "Url Link Item"
+        },
+        {
+          "type": "image_picker",
+          "id": "bg_image",
+          "label": "Background Image Item"
+        }
+      ]
+    } 
+  ],
+  "presets": [
+    {
+      "name": "Custom Featured Items"
+    }
+  ]
+}
+{% endschema %}
